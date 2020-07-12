@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: mix($color: rgb(11, 34, 243), $color: #ff0404, $weight: 0.5);
+
+  div {
+    margin: auto;
+    text-align: center;
+  }
+}
