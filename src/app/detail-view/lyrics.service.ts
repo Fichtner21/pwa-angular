@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,13 +14,13 @@ export class LyricsService {
 
   constructor(private _http: HttpClient) { }
 
-  getTop3Artists(){
+  getTop3Artists(): Observable<any>{
     return this._http.get(this.API_URL_3_CHART).pipe(
       map((result) => result)
     )
   }
 
-  getTop5SongsIt(){
+  getTop5SongsIt(): Observable<any>{
     return this._http.get(this.API_URL_5_TOP_SONGS_IT).pipe(
       map((result) => result)
     )
