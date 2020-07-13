@@ -1,0 +1,27 @@
+
+<mat-list>
+  <mat-toolbar color="primary">
+    <h3><mat-icon>stars</mat-icon> Top 3 włoskich artystów muzycznych</h3>
+  </mat-toolbar>
+  <mat-list-item *ngFor="let artist of artistName">
+    <mat-icon matListIcon>person</mat-icon>
+    <div matLine>{{ artist }}</div>
+  </mat-list-item>
+</mat-list>
+
+
+<mat-list>
+  <mat-toolbar color="primary">
+    <h3><mat-icon>stars</mat-icon> Top 5 włoskich piosenek</h3>
+  </mat-toolbar>
+  <mat-list-item class="artists" *ngFor="let track of topSongs">
+    <mat-icon matListIcon>album</mat-icon>
+    <div matLine class="">artysta: {{track.artist_name}} </div>  
+    <div matLine class="">tytuł: 
+      <a mat-raised-button color="accent" href="{{ track.track_share_url }}"> {{ track.track_name }}</a>
+    </div>      
+  </mat-list-item>
+</mat-list>
+
+
+
