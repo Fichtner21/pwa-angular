@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class GithubService {
 
-  public LAST_COMMIT = "https://api.github.com/repos/Fichtner21/pwa-angular/git/commits/26c71eceefbdb158aa5b3b3099eabde5a01d2c3b";
+  public LAST_COMMIT = "https://api.github.com/repos/Fichtner21/pwa-angular/commits";
 
   constructor(private _http: HttpClient) { }
 

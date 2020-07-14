@@ -8,14 +8,15 @@ import { GithubService } from './github.service';
 })
 export class HomeComponent implements OnInit {
   commitDate: String;
+  commitMessage: String;
 
   constructor(private _github: GithubService) { }
 
   ngOnInit(): void {
     this._github.lastCommit().subscribe(res => {
-      let authorDate = res.author.date;
-      this.commitDate = authorDate.slice(0,10);      
+      let authorDate = res['0'].commit.author.date;      
+      this.commitDate = authorDate.slice(0,10);       
+      this.commitMessage = res['0'].commit.message;        
     })
   }
-
 }

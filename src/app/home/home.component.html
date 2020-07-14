@@ -9,9 +9,15 @@
 
 <div class="">
   <a mat-raised-button href="https://github.com/Fichtner21/pwa-angular" title="See repo of this project">
-    <mat-icon>visibility</mat-icon> Repo of this project,
-    <span>last commit: {{ commitDate }}</span>
+    <mat-icon>visibility</mat-icon> Repo of this project    
   </a>
+</div>
+
+<div>
+  <button mat-raised-button disabled><span>last commit: {{ commitDate }}</span></button>
+</div>
+<div>
+  <button mat-raised-button disabled><span>commit message: {{ commitMessage }}</span></button>
 </div>
 
 <div>  
