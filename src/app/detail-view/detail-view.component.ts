@@ -9,6 +9,9 @@ import { LyricsService } from './lyrics.service';
 export class DetailViewComponent implements OnInit {  
   artistName: String;
   topSongs: String;
+  topInDe: String;
+
+  panelOpenState = false;
 
   constructor(private _lyrcis: LyricsService) { }
 
@@ -20,6 +23,12 @@ export class DetailViewComponent implements OnInit {
     this._lyrcis.getTop5SongsIt().subscribe(res => {
       this.topSongs = res.message.body['track_list'].map(res => res.track);     
     })
-  }
 
+    this._lyrcis.getTop3inDE().subscribe(res => {
+      this.topInDe = res.message.body['artist_list'].map(res => res.artist.artist_name);
+    })
+  }
 }
+
+ 
+  

@@ -9,7 +9,6 @@
   </mat-list-item>
 </mat-list>
 
-
 <mat-list>
   <mat-toolbar color="primary">
     <h3><mat-icon>stars</mat-icon> Top 5 italian songs</h3>
@@ -22,6 +21,26 @@
     </div>      
   </mat-list-item>
 </mat-list>
+
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-toolbar color="primary">
+          <h3><mat-icon>stars</mat-icon> Top 3 artists in Germany</h3>
+        </mat-toolbar>
+      </mat-panel-title>
+      <mat-panel-description class="state">
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-list-item *ngFor="let art_de of topInDe">
+      <mat-icon matListIcon>person</mat-icon>
+      <div matLine>{{ art_de }}</div>
+    </mat-list-item>
+  </mat-expansion-panel>
+</mat-accordion>
 
 
 

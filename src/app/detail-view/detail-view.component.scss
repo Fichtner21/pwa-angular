@@ -11,3 +11,19 @@ h3 {
     margin-right: 10px;
   }
 }
+
+.mat-list-item-content {
+  display: flex;
+}
+
+.state {
+  background-color: #ffd740;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.mat-expansion-indicator {
+  padding: 20px;
+  background-color: #673ab7;
+}
