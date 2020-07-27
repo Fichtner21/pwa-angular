@@ -27,3 +27,27 @@ h3 {
   padding: 20px;
   background-color: #673ab7;
 }
+
+.mat-expansion-panel-header-title {
+  color: #fff;
+  font-weight: 700;
+}
+
+.mat-expansion-panel {
+  background-color: #673ab7;
+  color: #fff;
+}
+
+.mat-line {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+
+  .mat-icon {
+    margin-right: 5px;
+  }
+}
+
+.mat-focus-indicator {
+  margin-left: 10px;
+}
