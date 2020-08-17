@@ -28,7 +28,7 @@
     <mat-list-item class="artists" *ngFor="let track of topSongs">      
       <div matLine class=""><mat-icon matListIcon>album</mat-icon> {{'top.artist' | translate }}: {{track.artist_name}} </div>  
       <div matLine class="">{{ 'top.title' | translate }}: 
-        <a mat-raised-button color="accent" href="{{ track.track_share_url }}"> {{ track.track_name }}</a>
+        <a mat-raised-button color="accent" href="{{ track.track_share_url }}" class="track"> {{ track.track_name }}</a>
       </div>      
     </mat-list-item>
   </mat-expansion-panel>

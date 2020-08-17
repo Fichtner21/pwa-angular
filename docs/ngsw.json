@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1597658776927,
+  "timestamp": 1597661110891,
   "index": "https://fichtner21.github.io/pwa-angular/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://fichtner21.github.io/pwa-angular/favicon.ico",
         "https://fichtner21.github.io/pwa-angular/index.html",
-        "https://fichtner21.github.io/pwa-angular/main-es2015.99c50fc462cb74394150.js",
-        "https://fichtner21.github.io/pwa-angular/main-es5.99c50fc462cb74394150.js",
+        "https://fichtner21.github.io/pwa-angular/main-es2015.fe61b9dabb807c57854c.js",
+        "https://fichtner21.github.io/pwa-angular/main-es5.fe61b9dabb807c57854c.js",
         "https://fichtner21.github.io/pwa-angular/manifest.webmanifest",
         "https://fichtner21.github.io/pwa-angular/polyfills-es2015.f332a089ad1600448873.js",
         "https://fichtner21.github.io/pwa-angular/polyfills-es5.177e85a9724683782539.js",
@@ -71,9 +71,9 @@
     "https://fichtner21.github.io/pwa-angular/assets/icons/web_hi_res_72.png": "b461f769f017bb0efa84c2a7da6812dcf00b89be",
     "https://fichtner21.github.io/pwa-angular/assets/icons/web_hi_res_96.png": "4266c9a07fdd6076de77c934e2e803c9724f468b",
     "https://fichtner21.github.io/pwa-angular/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://fichtner21.github.io/pwa-angular/index.html": "0936ceff84a8d3cc2a7e3c0a99c0d83e4d93ef7a",
-    "https://fichtner21.github.io/pwa-angular/main-es2015.99c50fc462cb74394150.js": "542077ff8f1a9a2623262edf1aad29d8001aa77a",
-    "https://fichtner21.github.io/pwa-angular/main-es5.99c50fc462cb74394150.js": "fe5397148a2ed55572e341e979acf0cb7759a463",
+    "https://fichtner21.github.io/pwa-angular/index.html": "8bde2b2480b495a6908d3df20542fdea4e3f0b0b",
+    "https://fichtner21.github.io/pwa-angular/main-es2015.fe61b9dabb807c57854c.js": "ea74377a0ab78952d3f70a17f4743d3b8feeaa41",
+    "https://fichtner21.github.io/pwa-angular/main-es5.fe61b9dabb807c57854c.js": "21589531f1f18723eb19ba6af2ecc1523ec6016e",
     "https://fichtner21.github.io/pwa-angular/manifest.webmanifest": "7160b1af948099eb0bc32550875254890c78de94",
     "https://fichtner21.github.io/pwa-angular/polyfills-es2015.f332a089ad1600448873.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "https://fichtner21.github.io/pwa-angular/polyfills-es5.177e85a9724683782539.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
