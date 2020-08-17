@@ -1,53 +1,11 @@
 
-<!-- <mat-list>
-  <mat-toolbar color="primary">
-    <h3><mat-icon>stars</mat-icon> Top 3 italian music artists</h3>
-  </mat-toolbar>
-  <mat-list-item *ngFor="let artist of artistName">
-    <mat-icon matListIcon>person</mat-icon>
-    <div matLine>{{ artist }}</div>
-  </mat-list-item>
-</mat-list> -->
-
-<!-- <mat-list>
-  <mat-toolbar color="primary">
-    <h3><mat-icon>stars</mat-icon> Top 5 italian songs</h3>
-  </mat-toolbar>
-  <mat-list-item class="artists" *ngFor="let track of topSongs">
-    <mat-icon matListIcon>album</mat-icon>
-    <div matLine class="">artysta: {{track.artist_name}} </div>  
-    <div matLine class="">tytuł: 
-      <a mat-raised-button color="accent" href="{{ track.track_share_url }}"> {{ track.track_name }}</a>
-    </div>      
-  </mat-list-item>
-</mat-list> -->
-
-<!-- <mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        <mat-toolbar color="primary">
-          <h3><mat-icon>stars</mat-icon> Top 3 artists in Germany</h3>
-        </mat-toolbar>
-      </mat-panel-title>
-      <mat-panel-description class="state">
-        Currently I am {{panelOpenState ? 'open' : 'closed'}}
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <mat-list-item *ngFor="let art_de of topInDe">
-      <mat-icon matListIcon>person</mat-icon>
-      <div matLine>{{ art_de }}</div>
-    </mat-list-item>
-  </mat-expansion-panel>
-</mat-accordion> -->
-
 <mat-accordion>  
   <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
+                       (closed)="panelOpenState = false"
+                       [expanded]="true">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <h3><mat-icon>stars</mat-icon> Top 3 Music Artists in Italy</h3>
+        <h3><mat-icon>stars</mat-icon> {{'top.top-3-artist-it' | translate }}</h3>
       </mat-panel-title>
       <mat-panel-description>
         <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
@@ -61,15 +19,15 @@
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <h3><mat-icon>stars</mat-icon> Top 5 songs in Italy</h3>
+        <h3><mat-icon>stars</mat-icon> {{ 'top.top-5-songs-it' | translate }}</h3>
       </mat-panel-title>
       <mat-panel-description>
         <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->
       </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-list-item class="artists" *ngFor="let track of topSongs">      
-      <div matLine class=""><mat-icon matListIcon>album</mat-icon> Artist: {{track.artist_name}} </div>  
-      <div matLine class="">Title: 
+      <div matLine class=""><mat-icon matListIcon>album</mat-icon> {{'top.artist' | translate }}: {{track.artist_name}} </div>  
+      <div matLine class="">{{ 'top.title' | translate }}: 
         <a mat-raised-button color="accent" href="{{ track.track_share_url }}"> {{ track.track_name }}</a>
       </div>      
     </mat-list-item>
@@ -78,7 +36,7 @@
                        (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
-        <h3><mat-icon>stars</mat-icon> Top 3 artists in Germany</h3>
+        <h3><mat-icon>stars</mat-icon> {{ 'top.top-3-artist-de' | translate }}</h3>
       </mat-panel-title>
       <mat-panel-description>
         <!-- Currently I am {{panelOpenState ? 'open' : 'closed'}} -->

@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "top" : "Najlepsi artyści i pioseneki",
+    "language": "Język"
+  },
+  "home": {
+    "pwa": "Tak",
+    "tech": "Technologie",
+    "desc-label": "Opis",
+    "desc": "Jest to prosta aplikacja typu Progressive Web Application, która używa do wyświetlenia treści danych pochodzących z API musixmatch. Jest to aplikacja PWA, więc możesz ją dodać do menu głównego na swoim smartfonie. Dodanie aplikacji może nastąpić bezpośrednio po kliknięciu zainstaluj w pasku URL przeglądarki chrome bądź poprzez notyfikacje podczas wejścia na stronę główną aplikacji",
+    "repo": "Repozytorium tego projektu",
+    "last-c": "ostatni commit",
+    "last-m": "wiadomość commita"
+  },
+  "top": {
+    "top-3-artist-it": "3 najlepszych artystów we Włoszech",
+    "top-5-songs-it": "5 najlepszych piosenek we Włoszech",
+    "artist": "Artysta",
+    "title": "Tytuł",
+    "top-3-artist-de": "3 najlepszych artystów w Niemczech"
+  },
+  "noti": {
+    "info": "Język został zmieniony"
+  }
+}

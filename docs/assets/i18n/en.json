@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Home",
+    "top" : "Top Music Artists and Songs",
+    "language": "Language"
+  },
+  "home": {
+    "pwa": "Yes",
+    "tech": "Tech",
+    "desc-label": "Description",
+    "desc": "This is basic Progressive Web Application example, which using musixmatch API to display some example values. Because it is PWA, you can add to main screen this app on mobile or install on desktop directly from url bar.",
+    "repo": "Repo of this project",
+    "last-c": "last commit",
+    "last-m": "commit message"
+  },
+  "top": {
+    "top-3-artist-it": "Top 3 Music Artists in Italy",
+    "top-5-songs-it": "Top 5 songs in Italy",
+    "artist": "Artist",
+    "title": "Title",
+    "top-3-artist-de": "Top 3 artists in Germany"
+  },
+  "noti": {
+    "info": "Language has changed"
+  }  
+}

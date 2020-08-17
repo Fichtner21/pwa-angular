@@ -70,7 +70,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pwa-angular:build"
+            "browserTarget": "pwa-angular:build",
+            "port": 4204
           },
           "configurations": {
             "production": {

@@ -13,14 +13,25 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient} from '@angular/common/http';
+import { CustomNotificationComponent } from './custom-notification/custom-notification.component';
 
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    DetailViewComponent
+    DetailViewComponent,
+    CustomNotificationComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +43,19 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatListModule,
     MatExpansionModule,
-    MatIconModule
+    MatIconModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: createTranslateLoader,
+          deps: [HttpClient],
+      },
+      defaultLanguage: 'en'
+    }),
+    MatSnackBarModule,
+    MatSelectModule,
+    ReactiveFormsModule,
+    MatFormFieldModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
