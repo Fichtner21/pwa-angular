@@ -9,8 +9,7 @@ import { Component, OnInit } from '@angular/core';
 //   title = 'pwa-angular';
 // }
 
-export class AppComponent implements OnInit {
-  
+export class AppComponent implements OnInit {  
 
   constructor() { }
 
