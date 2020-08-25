@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SwUpdate } from '@angular/service-worker';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +10,18 @@ import { Component, OnInit } from '@angular/core';
 //   title = 'pwa-angular';
 // }
 
-export class AppComponent implements OnInit {
-  
+export class AppComponent implements OnInit {  
 
-  constructor() { }
+  constructor(private swUpdate: SwUpdate) { }
 
   ngOnInit(): void {
-    
+    if(this.swUpdate.isEnabled){
+      this.swUpdate.available.subscribe(() => {
+        if(confirm("New version available. Load New Version?")){
+          window.location.reload();
+        }
+      })
+    }
   }
 
 }
