@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import { ServiceWorkerModule, SwRegistrationOptions } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
 import { DetailViewComponent } from './detail-view/detail-view.component';
@@ -36,7 +36,10 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      registrationStrategy: 'registerImmediately',
+    }),
     BrowserAnimationsModule,
     MatButtonModule,
     MatToolbarModule,
@@ -56,7 +59,12 @@ export function createTranslateLoader(http: HttpClient) {
     ReactiveFormsModule,
     MatFormFieldModule 
   ],
-  providers: [],
+  providers: [
+    {
+      provide: SwRegistrationOptions,
+      useFactory: () => ({enabled: location.search.includes('sw=true')}),
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
