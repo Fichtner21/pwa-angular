@@ -4,8 +4,8 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",  
-  "scope": "https://fichtner21/",  
-  "start_url": "https://fichtner21.github.io/pwa-angular/",
+  "scope": "/",  
+  "start_url": "/pwa-angular",
   "icons": [
     {
       "src": "assets/icons/web_hi_res_72.png",
